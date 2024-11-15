@@ -22,9 +22,9 @@ async def start(message: types.Message):
         url="https://translate.google.com/")
     builder = ReplyKeyboardBuilder()
     builder.add(types.KeyboardButton(
-        text='Launch app', web_app=webAppInfo))
+        text='Launch App', web_app=webAppInfo))
 
-    await message.answer(text='App launched', reply_markup=builder.as_markup())
+    await message.answer(text='Welcome to WordWise bot', reply_markup=builder.as_markup())
 
 
 async def main():
