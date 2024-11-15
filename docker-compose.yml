@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./token.txt:/run/secrets/token.txt:ro
+    restart: unless-stopped
